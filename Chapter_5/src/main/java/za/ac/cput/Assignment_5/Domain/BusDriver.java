@@ -7,7 +7,7 @@ public class BusDriver{
 
     private String name;
     private String surname;
-    private String Stuff_Num;
+    private String emp_num;
 
     public String getName() {
         return name;
@@ -18,14 +18,14 @@ public class BusDriver{
     }
 
     public String getStuff_Num() {
-        return Stuff_Num;
+        return emp_num;
     }
     private BusDriver() {
 
     }
 
     private BusDriver(Builder builder) {
-        this.Stuff_Num= builder.Stuff_Num;
+        this.emp_num= builder.Stuff_Num;
         this.name= builder.name;
         this.surname = builder.surname;
 
@@ -53,7 +53,7 @@ public class BusDriver{
         public Builder copy(BusDriver value) {
             this.name = value.name;
             this.surname = value.surname;
-            this.Stuff_Num = value.Stuff_Num;
+            this.Stuff_Num = value.emp_num;
             return this;
         }
 
